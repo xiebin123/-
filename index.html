@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>扫雷</title>
+<style>
+html, body {
+width:100%, height:100%;
+	margin: 0;
+	padding: 0
+}
+#box {
+	padding: 20px;
+	width: 240px;
+}
+#box span {
+	display: inline-block;
+	width: 19px;
+	height: 19px;
+	background-color: #abcdef;
+	border: 1px solid #ccc;
+	margin: 1px;
+	cursor: pointer;
+	font-size: 12px;
+	text-align: center;
+	line-height: 19px;
+	float: left;
+}
+#box span:hover {
+	background-color: #f2b0b0;
+}
+#box span.boom {
+	background-color: red;
+}
+#box span.safe {
+	background-color: #fff;
+}
+</style>
+</head>
+
+<body>
+<div id='box'></div>
+<script src="扫雷.js"></script>
+</body>
+</html>
